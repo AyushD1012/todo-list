@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>
+        <%= locals.title%>
+    </title>
+    <script src="https://kit.fontawesome.com/9dea6046c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/home.css">
+
+</head>
+
+<body>
+    <h1 class="todo">TODO LIST</h1>
+    <div class="all">
+        <form action="/create-todo" method="post">
+
+            <div class="description">
+                <h3>DESCRIPTION</h3>
+
+                <input class="description-class" type="text" name="description" placeholder="What do you need to do?"
+                    required>
+            </div>
+            <div class="task">
+                <div class="category">
+                    <h3>CATEGORY</h3>
+                    <select class="select" name="category" id="category">
+                        <option value="personal" class="personal">PERSONAL</option>
+                        <option value="work">WORK</option>
+                        <option value="school">SCHOOL</option>
+                        <option value="cleaning">CLEANING</option>
+                        <option value="others">OTHERS</option>
+                    </select>
+
+                </div>
+                <div class="date">
+                    <h3>DATE</h3>
+                    <input class="dateclass" type="datetime-local" name="date" required>
+                </div>
+
+
+            </div>
+            <div class="buttons">
+                <button class="btn1"><i class="fa-solid fa-plus"></i><label>ADD TASK</label></button>
+                
+                <button class="btn2" ><i class="fa-solid fa-trash"></i>
+                    <a href="/delete-contact/?id=<%=i._id%>">DELETE TASK</a></button>
+                
+            </div>
+        </form>
+        <div>
+            <ul>
+                <% for(var i of Todo){%>
+
+                    
+
+                    <div class="tasks">
+                        
+                        <div class="p1">
+                             <input type="checkbox" class="checkbox" value="<%=i._id%>"></a>
+                           
+                            <%= i.description %>
+                        </div>
+                        <div class="p2">
+
+                            <div class="category_button">
+                                <%= i.category %>
+                            </div>
+
+
+
+                        </div>
+                        <div class="p3">
+                            <%= i.date %>
+                        </div>
+
+                    </div>
+
+
+                    <%}%>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+body {
+    background-color: aliceblue;
+}
+
+.todo {
+    text-align: center;
+    font-size: 70px;
+}
+
+.all {
+    border: 2px solid black;
+
+    margin: auto;
+    width: 60%;
+    border: 5px solid #FFFF00;
+    padding: 10px;
+}
+
+.description {
+    border: 2px solid black;
+
+
+
+
+}
+
+.description-class {
+    width: 100%;
+    height: 30px;
+    font-size: 25px;
+}
+
+input {
+    border: 0px solid;
+    background-color: aliceblue;
+}
+
+.select {
+    height: 40px;
+    background-color: aliceblue;
+    border: 0px solid;
+
+    font-size: 20px;
+    width: 100%;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.date {
+    border: 2px solid black;
+    width: 50%;
+
+
+}
+
+.dateclass {
+    height: 40px;
+    font-size: 20px;
+}
+
+.category {
+    border: 2px solid black;
+    width: 50%;
+}
+
+.button {
+    /* margin: auto; */
+    width: 20%;
+    margin: 10px 0px 0px 200px;
+    height: 100px;
+
+}
+
+label {
+    font-size: 25px;
+}
+
+i {
+    font-size: 30px;
+    margin: 0px 10px 0px 0px;
+}
+
+.btn1 {
+    background-color: blue;
+    margin: 20px 0px 20px 200px;
+    height: 100px;
+    width: 300px;
+}
+
+.btn2 {
+    background-color: red;
+    float: right;
+    margin: 20px 200px 20px 0px;
+    height: 100px;
+    width: 300px;
+}
+
+.tasks {
+    background-color: #3aa3a2;
+    color: white;
+    height: 100px;
+
+    width: 100%;
+
+}
+
+.category_button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    float: right;
+    height: 50px;
+    width: 20%;
+    margin: 0px 20px 10px 0px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px 0px 0px;
+}
+
+.p1 {
+    margin: 5px 0px 10px 0px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.p2 {
+    margin: 5px 0px 10px 0px;
+
+}
+
+.p3 {
+    color: black;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+}
